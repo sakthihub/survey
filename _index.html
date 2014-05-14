@@ -1,0 +1,2422 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.calculator.css">
+<title>BASELINE QUESTIONNAIRE 2009</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script language="jscript" src="js/jquery-1.8.2.min.js"></script>
+
+
+<script type="text/javascript" src="js/jquery.plugin.js"></script>
+<script type="text/javascript" src="js/jquery.calculator.js"></script>
+
+<script>
+	$(document).ready(function(){
+	$('#basicCalculator').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator2').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator3').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator4').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator5').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator6').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator7').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator8').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator9').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator10').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator11').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+		$('#basicCalculator12').calculator({
+		showOn: 'both', buttonImageOnly: true, buttonImage: 'calculator.png'});
+				
+		/*$("#intro").hide();
+		$("#secA").hide();
+		$("#secB").hide();
+		$("#secA0").hide();
+		$("#secA6").hide();
+		$("#secE").hide();
+		$("#secF").hide();
+		$("#secG").hide();
+		$("#secI").hide();
+		$("#secJ").hide();
+		$("#secM").hide();
+		$("#secN").hide();*/
+		
+		$(".enter_btns").click(function(){
+			$("#index").hide();
+			$("#intro").show();
+			$("body").css("background-image","none");
+		});
+		$(".start_survey").click(function(){
+			$("#secA").show();
+			$("#intro").hide();
+		});
+		
+		$("#gotoprev_A").click(function(){
+			$("#secA").hide();
+			$("#intro").show();
+		});
+		$("#gotonext_A").click(function(){
+			$("#secA").hide();
+			$("#secB").show();
+		});
+		
+		$("#gotoprev_B").click(function(){
+			$("#secB").hide();
+			$("#secA").show();
+		});
+		$("#gotonext_B").click(function(){
+			$("#secB").hide();
+			$("#secA0").show();
+		});
+		
+		$("#gotoprev_A0").click(function(){
+			$("#secA0").hide();
+			$("#secB").show();
+		});
+		$("#gotonext_A0").click(function(){
+			$("#secA0").hide();
+			$("#secA6").show();
+		});
+		
+		$("#gotoprev_A6").click(function(){
+			$("#secA6").hide();
+			$("#secA0").show();
+		});
+		$("#gotonext_A6").click(function(){
+			$("#secA6").hide();
+			$("#secE").show();
+		});
+		
+		$("#gotoprev_E").click(function(){
+			$("#secE").hide();
+			$("#secA6").show();
+		});
+		$("#gotonext_E").click(function(){
+			$("#secE").hide();
+			$("#secF").show();
+		});
+		
+		$("#gotoprev_F").click(function(){
+			$("#secF").hide();
+			$("#secE").show();
+		});
+		$("#gotonext_F").click(function(){
+			$("#secF").hide();
+			$("#secG").show();
+		});
+		
+		$("#gotoprev_G").click(function(){
+			$("#secG").hide();
+			$("#secF").show();
+		});
+		$("#gotonext_G").click(function(){
+			$("#secG").hide();
+			$("#secI").show();
+		});
+		
+		$("#gotoprev_I").click(function(){
+			$("#secI").hide();
+			$("#secG").show();
+		});
+		$("#gotonext_I").click(function(){
+			$("#secI").hide();
+			$("#secJ").show();
+		});
+		
+		$("#gotoprev_J").click(function(){
+			$("#secJ").hide();
+			$("#secI").show();
+		});
+		$("#gotonext_J").click(function(){
+			$("#secJ").hide();
+			$("#secM").show();
+		});
+		
+		$("#gotoprev_M").click(function(){
+			$("#secM").hide();
+			$("#secJ").show();
+		});
+		$("#gotonext_M").click(function(){
+			$("#secM").hide();
+			$("#secN").show();
+		});
+		$("#gotoprev_N").click(function(){
+			$("#secN").hide();
+			$("#secM").show();
+		});
+
+
+		$("#secA .a_ques6 input:radio").click(function() {			
+			if(this.value == "noOne"){
+				$(".a_ques7").hide(100);
+			}
+			else{
+				$(".a_ques7").show(100);
+			}
+
+   		});
+		
+		$("#secB .b_ques8 input:radio").click(function() {			
+			if(this.value == "assistance"){
+				$(".b_ques9").hide(100);
+			}
+			else{
+				$(".b_ques9").show(100);
+			}
+
+   		});
+		
+		
+		
+		$(".tam_content h5").each(function () {
+      		var el = $(this),
+            text = el.html(),
+            first = text.slice(0, 1),
+            rest = text.slice(1);
+      		el.html("<span class='firstletter'>" + first + "</span>" + rest);
+});
+
+		
+	});
+	
+</script>
+</head>
+<body style="background:url(images/home_page_bg.jpg) no-repeat top center; -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+
+<div class="container">
+	<div class="headline" id="index">
+		<h2><b>Field Research for<br> FINISH Evaluation with BWDC in Thiruvarur, <br>Tamil Nadu - Household Questionnaire</b></h2><br><br>
+		<h2>Jointly with Institute for Fiscal Studies, UK</h2><br>
+		<h2>Funded by WASTE, Netherlands</h2><br><br><br><br>
+		<h2>Institute of Sustainable Development (ISD)<br>
+		<span>S1-S2 Air Force Nagar, TSP Road<br>
+		Veerapuram, Chennai 600 055<br>
+		Tel: 044-26840209</span></h2>
+		
+		<div class="enter_btn">
+			<a href="#" class="enter_btns"><p>Enter</p></a>
+		</div>
+	</div>
+	
+	
+	<!-- Start of Intro -->
+	
+	<div class="eng_content" id="intro">
+		<h2>FOLLOW-UP HOUSEHOLD QUESTIONNAIRE 2014 – FINISH TN EVALUATION</h2>
+		
+		<p><i>INTERVIEWER:</i> Use the household list to find the household. Copy the village code from the village list in 1d and the household ID from the household list in 1d below. Use the household member list to identify the household member code/ID for the respondent. This household member list is also used to fill in the household roster XXX. Do this before the interview starts to save time for the respondent.</p>
+		<p>Enter the GPS coordinates in 1.5 below and the code of the water sample in 1.6. Do this at the end of the interview. Do not forget to fill in the observations at the end of the survey. Observe the toilet of the household in case they have one, observe the general environment (k.1-K.5) and answer the questions on the water source in the household (K.5). This should be the main drinking water source so could be the vessel in which water is collected or a pump, etc..
+Make sure you respect the time of the respondent. If needed stop the interview and continue at a later time or other day. Do not forget to get the consent of the respondent. Without the consent, do not continue.</p>
+
+	<table width="100%" border="0">
+  <tr>
+    <td colspan="3" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;"><i>INTERVIEWER: Questions 1-4 should be filled in based on the household list</i></p></td>
+    </tr>
+  <tr class="even">
+    <td width="6%">1a</td>
+    <td width="41%" style="font-family:Conv_Ismail">Xd;wpak;</td>
+    <td width="53%"><form name="form2" method="post" action="">
+      <label>
+        <input type="text" name="textfield">
+        </label>
+    </form>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>1b</td>
+    <td style="font-family:Conv_Ismail">Cuhl;rp</td>
+    <td><form name="form3" method="post" action="">
+      <label>
+        <input type="text" name="textfield2">
+        </label>
+    </form>
+    </td>
+  </tr>
+  <tr class="even">
+    <td>1c</td>
+    <td style="font-family:Conv_Ismail">fpuhkk;</td>
+    <td><form name="form4" method="post" action="">
+      <label>
+        <input type="text" name="textfield3">
+        </label>
+    </form>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>1d</td>
+    <td style="font-family:Conv_Ismail">fpuhk milahs vz;</td>
+    <td><form name="form5" method="post" action="">
+      <label>
+        <input type="text" name="textfield4">
+        </label>
+    </form>
+    </td>
+  </tr>
+  <tr class="even">
+    <td>1e</td>
+    <td style="font-family:Conv_Ismail">FLk;g milahs vz;</td>
+    <td><form name="form6" method="post" action="">
+      <label>
+        <input name="textfield5" type="text" maxlength="7">
+        </label>
+    </form>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>2</td>
+    <td style="font-family:Conv_Ismail">mog;gil Ma;tpy; ny;yhj FLk;gk; vdpy;, Vd;?</td>
+    <td><form name="form1" method="post" action="">
+		  <p style="font-family:Conv_Ismail">		    
+		    <label><input type="radio" name="caste" value="radio"> TLjyhf Bru;f;fg;gl;l FLk;gk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> epue;jukhf Fobgau;e;jdu;</label><br>			
+			<label><input type="radio" name="caste" value="radio"> jw;fhypfkhf Fobgau;e;jdu</label><br>			
+			<label><input type="radio" name="caste" value="radio"> fz;lwpa Koatpy;iy</label><br>			
+			<label><input type="radio" name="caste" value="radio"> gyKiw bjhlu;g[f;F gpwFk; fpilf;ftpy;iy</label><br>			
+			<label><input type="radio" name="caste" value="radio"> kw;wit ( Fwpg;gplt[k;) </label><br><input type="text" name="textfield5">			
+	      </p>
+	  </form>
+    </td>
+  </tr>
+  <tr class="even">
+    <td>3a</td>
+    <td style="font-family:Conv_Ismail">gjpyspg;gtupd; bgah;</td>
+    <td><form name="form8" method="post" action="">
+      <label>
+        <input type="text" name="textfield7">
+        </label>
+    </form>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>3b</td>
+    <td style="font-family:Conv_Ismail">gjpyspg;gtupd; milahs vz;</td>
+    <td><form name="form9" method="post" action="">
+      <label>
+        <input type="text" name="textfield8">
+        </label>
+    </form>
+    </td>
+  </tr>
+  <tr class="even">
+    <td>4a</td>
+    <td style="font-family:Conv_Ismail">gjpyhspapd; Jiztd; / Jiztpapd; bgah;</td>
+    <td><form name="form10" method="post" action="">
+      <label>
+        <input type="text" name="textfield9">
+        </label>
+    </form>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td>4b</td>
+    <td style="font-family:Conv_Ismail">gjpyhspapd; mg;ghtpd; bgah;</td>
+    <td><form name="form11" method="post" action="">
+      <label>
+        <input type="text" name="textfield10">
+        </label>
+    </form>
+    </td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0">
+  
+  <tr bgcolor="#68264D" style="color:#FFFFFF; font-family:Conv_Ismail;">
+    <td colspan="7" valign="top">&nbsp;</td>
+    <td width="12%" valign="top" style="font-family:Conv_Ismail">Beu;fhdy;</td>
+    <td width="8%" valign="top">ehs;</td>
+    <td width="11%" valign="top">khjk;</td>
+    <td width="11%" valign="top">tUlk;</td>
+    <td width="18%" valign="top">Beu;fhdy; bra;gthpd; bgah;</td>
+    <td width="33%" valign="top"><span style="font-family:Arial, Helvetica, sans-serif;">Outcome</span><br>1. Beu;fhdy; Koe;jJ<br>2. KGikaw;w Beu;fhdy;<br>3. gjpyhyp kWj;jhu;<br>4. gjpyhyp fpilf;ftpy;iy</td>
+  </tr>
+  <tr class="odd">
+    <td colspan="7" valign="top">7a</td>
+    <td style="font-family:Conv_Ismail">Kjy; Kiw bjhlh;g[ bfhs;Sjy;</td>
+    <td valign="top"><label>
+      <input type="text" name="textfield6" style="width:40px;">
+    </label></td>
+    <td valign="top"><input type="text" name="textfield62" style="width:40px;"></td>
+    <td valign="top"><input type="text" name="textfield66" style="width:40px;"></td>
+    <td valign="top"><input type="text" name="textfield662" style="width:100px;"></td>
+    <td valign="top"><input type="text" name="textfield6625" style="width:100px;"></td>
+  </tr>
+  <tr class="odd">
+    <td colspan="7" valign="top">7b</td>
+    <td style="font-family:Conv_Ismail">nuz;lhk; Kiw bjhlh;g[ bfhs;Sjy;</td>
+    <td valign="top"><label>
+      <input type="text" name="textfield6" style="width:40px;">
+    </label></td>
+    <td valign="top"><input type="text" name="textfield63" style="width:40px;"></td>
+    <td valign="top"><input type="text" name="textfield67" style="width:40px;"></td>
+    <td valign="top"><input type="text" name="textfield6622" style="width:100px;"></td>
+    <td valign="top"><input type="text" name="textfield6626" style="width:100px;"></td>
+  </tr>
+  <tr class="odd">
+    <td colspan="7" valign="top">7c</td>
+    <td style="font-family:Conv_Ismail">}d;whk; Kiw bjhlh;g[ bfhs;Sjy;</td>
+    <td valign="top"><label>
+      <input type="text" name="textfield6" style="width:40px;">
+    </label></td>
+    <td valign="top"><input type="text" name="textfield64" style="width:40px;"></td>
+    <td valign="top"><input type="text" name="textfield68" style="width:40px;"></td>
+    <td valign="top"><input type="text" name="textfield6623" style="width:100px;"></td>
+    <td valign="top"><input type="text" name="textfield6627" style="width:100px;"></td>
+  </tr>
+  <tr class="odd">
+    <td colspan="7" valign="top">7d</td>
+    <td style="font-family:Conv_Ismail">nWjp Kiw bjhlh;g[ bfhs;Sk; Bjjp</td>
+    <td valign="top"><label>
+      <input type="text" name="textfield6" style="width:40px;">
+    </label></td>
+    <td valign="top"><input type="text" name="textfield65" style="width:40px;"></td>
+    <td valign="top"><input type="text" name="textfield69" style="width:40px;"></td>
+    <td valign="top"><input type="text" name="textfield6624" style="width:100px;"></td>
+    <td valign="top"><input type="text" name="textfield6628" style="width:100px;"></td>
+  </tr>
+</table>
+	<div class="enter_btn">
+			<a href="#" class="start_survey" id="start_survey"><p>Start Survey</p></a>
+		</div><br><br><br><br>
+  </div>
+	<!--  End of Intro -->
+	
+	<!-- Start of Section A -->
+	<div class="tam_content" id="secA">
+		<h2>gFjp  <span>A</span>1.   FLk;gj;jpy; bghJthd Fzeyd;fs;:</h2>		
+		<h4>gjpyhspf;F thrpf;ft[k; : cA;fs; FLk;g Fzeyd;fis Bfl;f tpUg;ggLfpBwd;:</h4>
+		<h5>A1.1	FLk;g jiytupd; Ihjp vd;d?</h5>
+		<form name="form1" method="post" action="">
+		  <p>
+		    <label>
+		      <input type="radio" name="caste" value="radio">
+		      FLk;g cWg;gpdu;fs; midtUk; xBu Ihjp</label>
+		    <br>
+			<label class="left_align">Ihjp FwpaPL 1:<input name="" type="text"></label>
+			<br><br>
+		    <label>
+		      <input type="radio" name="caste" value="radio">
+		      IhjpfSf;fpilBaahd (fyg;g[) jpUkzk;</label><br>
+			  <label class="left_align">Ihjp FwpaPL 1:<input name="" type="text"></label>
+			  <label>Ihjp FwpaPL 2:<input name="" type="text"></label>
+		    <br>
+	      </p>
+	  </form>
+		
+	<h5>A1.2	cA;fs; FLk;gj;jpd; kjk; vd;d?</h5>	
+		
+		<form name="form1" method="post" action="">
+		  <p>
+		    <label>
+		      <input type="radio" name="caste" value="radio">
+		      ne;J</label>
+		    <br>
+		    <label><input type="radio" name="caste" value="radio"> K^;ypk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> fpU&;Jth;</label><br>
+			<label><input type="radio" name="caste" value="radio"> rPf;fpah;</label><br>
+			<label><input type="radio" name="caste" value="radio"> kjA;fSf;fpilBaahd (fyg;g[) jpUkzk;</label><br>
+			
+			
+			  <label class="left_align">kj FwpaPL 1:<input name="" type="text"></label>
+			  <label>kj FwpaPL 2:<input name="" type="text"></label>
+		    <br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;)</label>
+			<label><input name="" type="text"></label>
+	      </p>
+	  </form>
+
+		<h5>A1.3	FLk;g jiytu; ne;j fpuhkj;jpy; vj;jid Mz;Lfshf nUf;fpwhu;fs;</h5>	
+		<p>thH;ehs; KGtJk; :</p>	
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label> <label class="left_align">vj;jid tUlA;fs;: <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>			
+	      </p>
+	  </form>
+	  
+	  
+	  <h5>A1.3	FLk;g jiytupd; Jiz ne;j fpuhkj;jpy; vj;jid Mz;Lfshf nUf;fpwhu;fs;</h5>	
+		<p>thH;ehs; KGtJk; :</p>	
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label> <label class="left_align">vj;jid tUlA;fs;: <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bghUe;jhJ (FLk;g jiytUf;F jpUkzk; Mftpy;iy)</label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>			
+	      </p>
+	  </form>
+	  
+	  
+	  <h5>A1.4	cA;fs; FLk;gj;jpd; Kjd;ik tUkhdk; bfhLf;Fk; bjhHpy; vd;d?</h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> tptrhaTyp</label><br>
+			<label><input type="radio" name="caste" value="radio"> fl;olbjhHpyhspfs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> gaw;rpaw;w bjhHpyhspfs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> gz;iz bjhHpyhspfs;, kPdth;fs;, Btl;ilahLgth;fs;</label><br>			
+			<label><input type="radio" name="caste" value="radio"> Ra Btiy bra;gth;,tpahghuk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> bfsuhkhd Btiy, bjhHpw;El;gk;, eph;thfk;, Executive kw;Wk; MrPhpah;fs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> muR mYtyh;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ghy;gz;iz</label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>A1.5	cA;fs; FLk;gk;; mLj;j 1 tUlj;jpw;Fs; ne;j fpuhkj;ij tpl;L btspBa bry;y / BtW nlj;jpw;F FoBaw jpl;lk; cs;sjh?</h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk; epr;irakhf, ehA;fs; Vw;fdBt btspBaw jpl;lk; Bghl;Ls;Bshk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk; , kpft[k; tha;g;g[s;sJ</label><br>
+			<label><input type="radio" name="caste" value="radio"> xust[ tha;g;g[s;sJ</label><br>
+			<label><input type="radio" name="caste" value="radio"> tha;g;g[ ny;iy</label><br>			
+			<label><input type="radio" name="caste" value="radio"> kpft[k; tha;g;g[ Fiwt[</label><br>
+			<label><input type="radio" name="caste" value="radio"> ehA;fs; epr;rakhf btspBaw khl;Blhk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  
+	   <h5>A1.6	fle;j Mz;oy; cA;fs; FLk;g cWg;gpdu;fspy; ahBuDk; ( gUtfhyj;jpw;F Vw;w BtiyfSf;F) Fobgau;e;Js;sduh?</h5>	
+		<form name="form1" method="post" action="" class="a_ques6"> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="1"> Mk;, midj;J cWg;gpdu;fSk;</label><br>
+			<label><input type="radio" name="caste" value="2"> Mk;, rpy FLk;g cWg;gpdu;fs;</label><br>
+			<label><input type="radio" name="caste" value="noOne"> ahUk; ny;iy</label> <span style="font-family:Arial, Helvetica, sans-serif;">A</span> 1.8 Bfs;tpf;F bry;yt[k;<br>
+
+	      </p>
+	  </form>
+	  
+	  <div class="a_ques7"> 	
+	  <h5>A1.7	FLk;g cWg;gpdu;fs; vA;Bf Fobgau;e;jdu;?</h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> kw;bwhU khepyk; my;yJ bspehl;od; efu;g[w gFjpfspy;</label><br>
+			<label><input type="radio" name="caste" value="radio"> jkpH;ehl;od; efu;g[wA;fspy;</label><br>
+			<label><input type="radio" name="caste" value="radio"> fpuhk gFjpapy;</label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+
+	      </p>
+	  </form>
+	  </div>
+	  
+	  <h5>A1.8	ePA;fs; gpd;tUk; mwpf;ifia Vw;fpwPu;fsh? midj;J / rpy FLk;g cWg;gpdu;fs; nlk; bgau;e;J brd;w fhyj;jpy; vA;fsJ nUg;gplk; kw;Wk; clikfSf;fhd ghJfhg;g[ Fiwthf nUf;fpd;wd.</h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> fLikahf kWf;fpBwd;</label><br>
+			<label><input type="radio" name="caste" value="radio"> kWf;fpBwd;</label><br>
+			<label><input type="radio" name="caste" value="radio"> eLepiy</label><br>
+			<label><input type="radio" name="caste" value="radio"> Vw;fpBwd;</label><br>
+			<label><input type="radio" name="caste" value="radio"> fLikahf Vw;fpBwd;</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>A1.9	cA;fs; FLk;gj;jpw;F murhA;f rYif bgw ml;ilia brhe;jkhf itj;Js;sPu;fsh?</h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk; , md;djBah ml;il</label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk; , tWik Bfhl;ow;F fPH; cs;sjw;fhd ml;il</label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk;, FLk;g ml;il<br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy<br>
+			<label><input type="radio" name="caste" value="radio"> <span style="font-family:Arial, Helvetica, sans-serif">RSBY</span><br>
+			<label><input type="radio" name="caste" value="radio"> Mjhu; ml;il<br>
+			<label><input type="radio" name="caste" value="radio"> <span style="font-family:Arial, Helvetica, sans-serif">RGJAY</span><br>
+			<label><input type="radio" name="caste" value="radio"> Kjyikr;rupd tpupthd kUj;Jt fhg;gPl;L jpl;lk; <span style="font-family:Arial, Helvetica, sans-serif">(CMCHI)</span><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ<br>
+	      </p>
+	  </form>
+	  <div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_A"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_A"><p>Next</p></a>
+		</div><br><br><br><br>
+  
+	</div>
+	<!-- End of Section A -->
+	
+	<!-- Start of Section B -->
+	<div class="tam_content" id="secB">	  
+	  <h2>gFjp  <span>B.</span> cA;fs; FLk;gk; thH;fpw tPLfs; gw;wpa Fzeyd;fs;</h2>	
+	  <h4 style="font-family:Arial, Helvetica, sans-serif"><i>READ TO RESPONDENT: In this section I would like to ask you about the dwelling you currently live in.</i></h4>
+	  <h5>B.1 vd;d khjphpahd tPL nJ?</h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> fhd;fpuPl; tPL</label><br>
+			<label><input type="radio" name="caste" value="radio"> Xl;L tPL</label><br>
+			<label><input type="radio" name="caste" value="radio"> Tiu tPL<br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;) <label><input name="" type="text"></label><br>
+	      </p>
+	  </form>
+	  
+	  
+	  <h5>B.2 vj;jid miwfs; ne;j tPl;oy; cs;sd?<br><span style="font-family:Arial, Helvetica, sans-serif">(INCLUDE KITCHEN AND BATHROOM IF THESE ARE SEPARATE ROOMS WITHIN THE DWELLING)</span></h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> vz;iz vGjt[k; </label><label><input style="width:300px;" name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+
+	      </p>
+	  </form>
+	  
+	  
+	  <h5>B.3 bghJthf vA;Bf czt[ rikf;fg;gLfpwJ?</h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>			
+			<label><input type="radio" name="caste" value="radio"> tPl;odpYs;s jdp miw (rikay; miw)</label><br>
+			<label><input type="radio" name="caste" value="radio"> tPl;odpDs; , Mdhy; mjw;fhf totikf;fg;gl;l miw ny;iy</label><br>
+			<label><input type="radio" name="caste" value="radio"> tPl;ow;F btspBa</label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;) </label><label><input style="width:350px;" name="" type="text"></label><br>
+	      </p>
+	  </form>
+	  
+	   <h5>B.4	vt;tst[ fhykhf ne;j tPl;oy; cA;fs; FLk;gk; trpf;fpwJ?</h5>	
+		<p>thH;ehs; KGtJk; :</p>	
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label> <label class="left_align">vj;jid tUlA;fs;: <input name="" type="text"></label><br>			
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>			
+	      </p>
+	  </form>
+	  
+	  <h5>B.5	ne;j tPL cA;fs; FLk;gj;jpw;F brhe;jkhdjh?</h5>	
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label> <label><input name="" type="text"></label><br>					
+	      </p>
+	  </form>
+	  
+	  <h5>B.6	vt;tst[ fhykhf ne;j tPL cA;fSf;F brhe;jkhdJ ?</h5>	
+		<p>thH;ehs; KGtJk; :</p>	
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label> <label class="left_align">vj;jid tUlA;fs;: <input name="" type="text"></label><br>			
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>			
+	      </p>
+	  </form>
+
+	<h5>B.7 cA;fs; tPl;il thliff;F tpLtjhf nUe;jhy;, vt;tst[ thlif (U) Bfl;gPu;fs;?</h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> bjhifia vGjt[k; </label><label><input style="width:300px;" name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+
+	      </p>
+	  </form>
+	  
+	  
+	  <h5>B.8	ePA;fs; jw;BghJ thGk; ne;j tPL cA;fSf;F brhe;jkhdJ ny;iy vdwhy;, mjpy; cA;fspd; cupik vd;d ?</h5>			
+		<form name="form1" method="post" action="" class="b_ques8">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> thlif</label><br>
+			<label><input type="radio" name="caste" value="assistance"> nytrkhf <span style="font-family:Arial, Helvetica, sans-serif;">(assistance)</span> </label> <label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">B</span> 10 Bfs;tpf;F bry;yt[k; </label><br>			
+			<label><input type="radio" name="caste" value="radio"> Fj;jiff;F</label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwg;gplt[k;) </label> <label><input name="" type="text"></label><br>			
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ</label><br>
+	      </p>
+	  </form>
+
+	<div <div class="b_ques9">
+	<h5>B.9 ePA;fs; FoapUf;Fk; tPl;ow;F VBjDk; thlif brYj;JfpwPu;fs; vd;why; , xU khjj;jpwF vt;tst[ thlif bfhLf;fpwPu;fs;? (U) ?<br><span style="font-family:Arial, Helvetica, sans-serif">IF RESPONDENT PAYS NOT ON A MONTHLY BASIS, HELP THE RESPONDENT TO CALCULATE THE MONTHLY VALUE.</span></h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> bjhifia vGjt[k; </label><label><input style="width:300px;" name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+
+	      </p>
+	  </form>
+	  </div>
+	  
+	  <h5>B.10 nd;W ne;j tPl;il tpw;gjhf nUe;jhy;, vd;d kjpg;g[ nUf;Fk;? <br><span style="font-family:Arial, Helvetica, sans-serif">IF RESPONDENT ANSWERS “DON’T KNOW”, PROMPT FOR BEST ESTIMATE OR ESTIMATE FOR VALUE OF SIMILAR DWELLING NEARBY </span></h5>	
+		<form name="form1" method="post" action=""> 
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> bjhifia vGjt[k; </label><label><input style="width:300px;" name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+
+	      </p>
+	  </form>
+	  
+	  <h5>B.11	cA;fs; tPL fl;lg;gl;oUf;Fk; epyk; ahUf;F brhe;jk;?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> vdf;F brhe;jk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> fpuhkj;jpd; epy cupikahsu;fs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> khepy muR</label><br>
+			<label><input type="radio" name="caste" value="radio"> btspapy; cs;s epy cupikahsu;fs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> beUA;fpa cwtpdu;fs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> Jhuj;J brhe;jA;fs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> <span style="font-family:Arial, Helvetica, sans-serif;">Private Party who is not a landowner</span></label><br>
+			 <label><input type="radio" name="caste" value="radio"> kw;wit (Fwg;gplt[k;) </label><label><input style="width:300px;" name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  
+	   <h5>B.12	Rth; vd;d bghUl;fshy; fl;lg;gl;lJ? </h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> rpbkz;l / brA;fy;</label><br>
+			<label><input type="radio" name="caste" value="radio"> kz;/ brA;fy;/fy;</label><br>
+			<label><input type="radio" name="caste" value="radio"> kz;/ kuf;fl;il</label><br>
+			<label><input type="radio" name="caste" value="radio"> ml;il</label><br>
+			<label><input type="radio" name="caste" value="radio"> Tiu / }A;fpy;</label><br>
+			 <label><input type="radio" name="caste" value="radio"> kw;wit (Fwg;gplt[k;) </label><label><input style="width:300px;" name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>B.13	Bky;jsk; vd;d bghUl;fshy; fl;lg;gl;lJ?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> rpbkz;l;</label><br>
+			<label><input type="radio" name="caste" value="radio"> fy; / rpyhg;</label><br>
+			<label><input type="radio" name="caste" value="radio"> XL</label><br>
+			<label><input type="radio" name="caste" value="radio"> rPl;</label><br>
+			<label><input type="radio" name="caste" value="radio"> Tiu</label><br>
+			 <label><input type="radio" name="caste" value="radio"> kw;wit (Fwg;gplt[k;) </label><label><input style="width:300px;" name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>B.14	jiu vd;d bghUl;fshy; MdJ?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> ily;^;</label><br>
+			<label><input type="radio" name="caste" value="radio"> rpbkz;l;</label><br>
+			<label><input type="radio" name="caste" value="radio"> fy;</label><br>
+			<label><input type="radio" name="caste" value="radio"> kz;</label><br>
+			 <label><input type="radio" name="caste" value="radio"> kw;wit (Fwg;gplt[k;) </label><label><input style="width:300px;" name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>B.15	rikg;gjw;F Kjd;ikahf gad;gLk; vhpbghUs; vd;d?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> kpd;rhuk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> rpypz;lh;</label><br>
+			<label><input type="radio" name="caste" value="radio"> rhz vhptha[</label><br>
+			<label><input type="radio" name="caste" value="radio"> kz;bzz;bza;</label><br>
+			<label><input type="radio" name="caste" value="radio"> tpwF</label><br>
+			<label><input type="radio" name="caste" value="radio"> epyf;fup</label><br>
+			<label><input type="radio" name="caste" value="radio"> rhz tul;o</label><br>			
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwg;gplt[k;) </label><label><input style="width:300px;" name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjupahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>B.16	tpsf;F Vw;Wtjw;F Kjd;ikahf gad;gLj;jg;gLk; vhpbghUs; vd;d?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> kpd;rhuk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> jilapy;yh kpd;rhu naf;fp <span style="font-family:Arial, Helvetica, sans-serif;">(Generator)</span></label><br>
+			<label><input type="radio" name="caste" value="radio"> fhu; Bgl;lhp</label><br>
+			<label><input type="radio" name="caste" value="radio"> cyu; kpd;fyk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> kz;bz;bza; tpsf;F</label><br>
+			<label><input type="radio" name="caste" value="radio"> bkGFth;j;jp</label><br>
+			<label><input type="radio" name="caste" value="radio"> R{upa rf;jp</label><br>
+			 <label><input type="radio" name="caste" value="radio"> kw;wit (Fwg;gplt[k;) </label><label><input style="width:300px;" name="" type="text"></label><br>
+	      </p>
+	  </form>
+	  <div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_B"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_B"><p>Next</p></a>
+		</div><br><br><br><br>
+	</div>
+	<!-- End of Section B -->
+	
+	<!-- Start of Section A0 -->
+	
+	<!-- End of Section A0 -->
+	<div class="tam_content" id="secA0">
+		
+	  <h2 style="font-family:Arial, Helvetica, sans-serif;">SECTION A0. HOUSEHOLD ROSTER</h2>
+	  <h4>cA;fs; FLk;gj;jpy; ahbuy;yhk; cs;shh;fs; vd;W Bfl;f tpUk;g[fpBwd;. cA;fs; FLk;gj;jpy; ahbuy;yhk; nUf;fpwhh;fs; jw;rkak; nA;F ny;yhjth;fisa[k; Brh;j;J. FLk;g cWg;gpdh;fs; vd;gth; 6 khjk; (my;yJ) mjw;F Bky; FLk;gj;ij tpl;L btspBawp nUg;gpd;/ jpl;lkpl;L nUg;gpd; mth;fs; FLk;g cWg;gpdh;fs; my;y vd fUjg;gLth;. xU tpUe;jpdh; 6 khjk; ( my;yJ ) mjw;F Bky; FLk;gj;jpy; Brh;e;J nUe;J / nUf;f jpl;lkpl;LUg;gpd; mth; FLk;g cWg;gpdhuhf fUjg;gLth;.</h4>
+	  <p style="font-family:Arial, Helvetica, sans-serif; text-align:justify;"><i>INTERVIEWER, WRITE DOWN ALL THE PEOPLE WHO LIVED IN THIS HOUSEHOLD DURING THE PREVIOUS SURVEY – COPY THIS INFORMATION FROM THE PROVIDED LIST. ENSURE THAT THE ORDER IS THE SAME AS IN THE LIST. ASK WHETHER THEY STILL LIVE IN THE HOUSEHOLD. THEN ASK WHETHER ANY ADDITIONAL PERSON(s) LIVE NOW IN THE HOUSEHOLD AND ADD THEM AT THE END OF THE TABLE. THEN ASK QUESTIONS A.01 TO A0.6 FOR EACH HOUSHEOLD MEMBER. IN CASE THERE IS SOMEONE LIVING IN THE HOUSEHOLD MORE THAN 6 MONTH WHO IS NOT A FAMILY MEMBER, SERVENT (OR MORE DISTANT RELATIVE) BUT LIVING IN THE HOUSEHOLD SHOULD BE CONSIDERED AS A MEMBER.</i></p>
+	  <h5 style="font-family:Arial, Helvetica, sans-serif;">Family Membership Number : 123456</h5>
+	  
+	  <table width="100%" border="0">
+  <tr>    
+    <td bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">cWg;gpdu; Kjy; bgau;</p></td>
+    <td bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">cWg;gpdu; filrp bgau;</p></td>
+  </tr>
+  <tr class="even">    
+    <td width="41%" style="font-family:Conv_Ismail"><input type="text" name="textfield6"></td>
+    <td width="53%"><form name="form2" method="post" action="">
+      <label>
+        <input type="text" name="textfield">
+        </label>
+    </form>    </td>
+  </tr>
+</table>
+
+<table width="100%" border="0">
+  <tr>    
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">ntu; gjpyspg;gtuh?</p></td>
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">ntu; (bgau;): <br>
+      1=ne;j tPl;oy; jw;BghJk; FoapUf;fpwhu; 2=btspBa Fobgau;Js;shu; <br>3=cs;Bs te;Js;shu;</p></td>
+  </tr>
+  <tr class="even">    
+    <td width="41%" style="font-family:Conv_Ismail"><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>			
+	      </p>
+	  </form></td>
+    <td width="53%"><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> 1</label>
+			<label><input type="radio" name="caste" value="radio"> 2</label>			
+			<label><input type="radio" name="caste" value="radio"> 3</label>			
+	      </p>
+	  </form></td>
+  </tr>
+</table>
+
+<table width="100%" border="0">
+  <tr>
+    <td bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">&nbsp;</p></td>
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">Mz; (m) bgz;?</p></td>
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">mtu; (bgau;) vd;d cwt[Kiw cA;fSf;F</p></td>
+  </tr>
+  <tr class="even">
+    <td width="6%">1</td>
+    <td width="41%" style="font-family:Conv_Ismail"><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> bg</label>			
+	      </p>
+	  </form></td>
+    <td width="53%"><form name="form1" method="post" action="">
+      <input name="textfield522" type="text" maxlength="7">
+    </form></td>
+  </tr>  
+</table>
+	  
+	  <table width="100%" border="0">
+  <tr>
+    <td bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">&nbsp;</p></td>
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">fle;j gpwe;jehspy; mile;j taJ?</p></td>
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">jpUkz jFjp FwpaPL vGjt[k;<br>1 jpUkzkhfjth;<br>
+2 jpUkzkhdth;<br>
+3 jzpik gLj;jgl;lth;<br>
+4 tpthfuj;J bgw;wth;<br>
+5 tpjit</p></td>
+  </tr>
+  <tr class="even">
+    <td width="6%">1</td>
+    <td width="41%" style="font-family:Conv_Ismail"><form name="form1" method="post" action="">
+      <input name="textfield5222" type="text" maxlength="7">
+    </form></td>
+    <td width="53%"><form name="form1" method="post" action="">
+      <input name="textfield522" type="text" maxlength="7">
+    </form></td>
+  </tr>  
+</table>
+		
+		<div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_A0"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_A0"><p>Next</p></a>
+		</div><br><br><br><br>
+				
+  </div>
+  
+  <!-- End of Section A6 -->
+  		<div class="tam_content" id="secA6">
+		
+	  <h2>gFjp <span>A</span>6. bkhj;j FLk;g tUkhdk;</h2>	  
+	  <table width="100%" border="0">
+  <tr>
+    <td bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">&nbsp;</p></td>
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px; font-family:Arial, Helvetica, sans-serif;">SOURCE</p></td>
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">fle;j tUlj;jpy; ahnuDk; cA;fs; FLk;gj;jpy; njd; ( Mjhuk; ) _yk; tUkhdk; bgw;Ws;shu;fsh?</p></td>
+  </tr>
+  <tr class="even">
+    <td width="6%">1</td>
+    <td width="60%" style="font-family:Conv_Ismail">tptrha jpdTyp (brhe;j epyj;ij jtpu)</td>
+    <td width="34%"><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="odd">
+    <td>2</td>
+    <td style="font-family:Conv_Ismail">tptrhak; my;yhj kw;w Jiwapy; Typ</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="even">
+    <td>3</td>
+    <td style="font-family:Conv_Ismail">(bghUl;fshf nUe;jhy;) bghJ kw;Wk; epthuz gzpapy; Typ. v.fh. (Btisf;F czt[ jpl;lk; (m) nJBghd;w kw;w jpl;lA;fs;)</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="odd">
+    <td>4</td>
+    <td style="font-family:Conv_Ismail">brhe;j / FLk;g / gz;iz bjhHpy;<br> <span style="font-family:Arial, Helvetica, sans-serif;">[Any activity through which you earn income through self-employment and not wage employment. This may be producing and selling goods, such as farming, planting crops, herding animals, sewing, trading etc, or it may be through selling services such as hair dressing.]</span></td>
+    <td valign="top"><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="even">
+    <td>5</td>
+    <td style="font-family:Conv_Ismail">ghuk;gupa guk;giu bjhHpy;</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="even">
+    <td>6</td>
+    <td style="font-family:Conv_Ismail">Xa;t[jpak; (m) gzp Xa;t[ tUkhdk; (m) CdKw;nwhu; (m) tpjit cjtpj;bjhif</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="even">
+    <td>7</td>
+    <td style="font-family:Conv_Ismail">muRjpl;lk; }yk; gad;. v.fh. rKf cjtp, FHe;ijfs; gad;, Kd;Bdw;wj;jpd; }yk; cjtp, my;yJ eyj;jpl;llA;fs;</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="even">
+    <td>8</td>
+    <td style="font-family:Conv_Ismail">FLk;g/ ez;gu;fs; my;yJ kw;wtu;fsplk; ,Ue;J gzk; ,lkhw;wk; - cs;qu;</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="even">
+    <td>9</td>
+    <td style="font-family:Conv_Ismail">FLk;g/ ez;gu;fs; my;yJ kw;wtu;fsplk; ,Ue;J gzk; ,lkhw;wk; - btspa{u;</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="even">
+    <td>10</td>
+    <td style="font-family:Conv_Ismail">tHf;fkhd /muR CHpau; rk;gsk;</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="even">
+    <td>11</td>
+    <td style="font-family:Conv_Ismail">epyk; my;yJ tPl;L thlifapd; _yk; tUkhdk;</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+  <tr class="even">
+    <td>12</td>
+    <td style="font-family:Conv_Ismail">njw;F Kd; Fwpg;gplhj gpw tUkhdk; ( v.fh. R{jhl;lk;/ nrkpg;gpd; ,Ue;J tl;o/ tujl;riz)</td>
+    <td><form name="form1" method="post" action="">
+      <p>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          M</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          n</label>
+        <label>
+          <input type="radio" name="caste" value="radio">
+          bj</label>
+      </p>
+    </form></td>
+  </tr>
+</table>
+
+<table width="100%" border="0">
+  <tr>
+    <td bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">&nbsp;</p></td>
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">fle;j tUlj;jpy; njhuhakhf c';fs; FLk;g cWg;gpdu;fs; vt;tst[ tUkhdk; bgw;whu;fs; ? (bghUshf ,Ue;jhy; mij gzkhf kjpg;gPL bra;f)</p></td>
+    <td valign="top" bgcolor="#68264D"><p style="color:#FFFFFF; font-size:15px;">xU tUlj;jpy; vj;jid khj';fs; ,e;j Mjhuk; _yk; tUkhdk; bgw;whu;fs;?</p></td>
+  </tr>
+  <tr class="even">
+    <td width="6%">1</td>
+    <td width="48%" style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator">&nbsp;</td>
+    <td width="46%"><input name="" type="text"></td>
+  </tr>
+  <tr class="odd">
+    <td>2</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator2"></td>
+    <td><input name="Input" type="text"></td>
+  </tr>
+  <tr class="even">
+    <td>3</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator3"></td>
+    <td><input name="Input2" type="text"></td>
+  </tr>
+  <tr class="odd">
+    <td>4</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator4"></td>
+    <td><input name="Input3" type="text"></td>
+  </tr>
+  <tr class="even">
+    <td>5</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator5"></td>
+    <td><input name="Input4" type="text"></td>
+  </tr>
+  <tr class="even">
+    <td>6</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator6"></td>
+    <td><input name="Input5" type="text"></td>
+  </tr>
+  <tr class="even">
+    <td>7</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator7"></td>
+    <td><input name="Input6" type="text"></td>
+  </tr>
+  <tr class="even">
+    <td>8</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator8"></td>
+    <td><input name="Input7" type="text"></td>
+  </tr>
+  <tr class="even">
+    <td>9</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator9"></td>
+    <td><input name="Input8" type="text"></td>
+  </tr>
+  <tr class="even">
+    <td>10</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator10"></td>
+    <td><input name="Input9" type="text"></td>
+  </tr>
+  <tr class="even">
+    <td>11</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator11"></td>
+    <td><input name="Input10" type="text"></td>
+  </tr>
+  <tr class="even">
+    <td>12</td>
+    <td style="font-family:Conv_Ismail"><input name="" type="text" id="basicCalculator12"></td>
+    <td><input name="Input11" type="text"></td>
+  </tr>
+</table>
+
+<div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_A6"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_A6"><p>Next</p></a>
+	</div><br><br><br><br>
+				
+  </div>
+  <!-- End of Section A6 -->
+	<!-- Start of Section E -->
+		<div class="tam_content" id="secE">	
+		<h2>gFjp : <span>E.</span> brhe;j (m) FLk;g bjhHpy; my;yJ tptrhak;</h2>			
+		
+		<h5>E.0 gjpy; Bfl;gtu; :- brhe;j / FLk;g bjhHpy; my;yJ tptrhaj;jpd; _yk; tUkhdk; vd;gjw;F Mk; md;W Twpa[s;shu;fsh vd;W rupghu;f;f ( BkBy cs;s Bfs;tpapd; tupir vz; 4)</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">F 22</span> Bfs;tpf;F bry;f</label><br>
+	      </p>
+	  </form>
+	  <h4 style="font-family:Arial, Helvetica, sans-serif;">READ TO RESPONDENT: You said that you earn income from your own or family enterprise/farm/business. By own/family enterprise, I mean any activity through which you earn income through self-employment and not wage employment. This may be producing and selling goods, such as farming, planting crops, herding animals, sewing, trading etc, or it may be through selling services such as hair dressing. By income, I mean cash or in-kind. It is important to note that we are not just referring to registered businesses or legal entities and entrepreneurial activities but also to more informal activities.</h4>
+	  
+	  <h5>E.1 ePA;fs; xd;Wf;Fk; Bkw;gl;l epWtd';fis itj;Js;sPu;fsh?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">F 3</span> Bfs;tpf;F bry;f</label><br>
+	      </p>
+	  </form>
+	  
+	  
+	  <h5>E.2 vj;jid epWtdA;fs; cs;sd? <span style="font-family:'Times New Roman', Times, serif;">'O'</span> vd;why; mLj;j gFjpf;F bry;yt[k;.</h5>			
+		<form name="form1" method="post" action="">
+		  <p>			
+			<label>vz;iz vGjt[k; <input name="" type="text"></label><br>			
+	      </p>
+	  </form>
+		<h4 style="font-family:Arial, Helvetica, sans-serif">READ TO RESPONDENT: Now I want to ask you questions about the main enterprise, what I will refer to as the ‘primary’ joint enterprise. (By ‘main’ we mean the enterprise which brings the highest amount of income in a year).</h4><br>
+
+		
+		<h5>E.3 ne;j Kjd;ik epWtdk; cA;fSf;F brhe;jkhdjh?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Tl;lhf, xd;Wf;F nkw;gl;l FLk;g cWg;gpdu;fs; bfhz;lJ</label><br>
+			<label><input type="radio" name="caste" value="radio"> Tl;lhf, btspapy; cs;s egu;fSld;</label><br>
+			<label><input type="radio" name="caste" value="radio"> xju xU FLk;g cWg;gpdu;</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>E.4 ne;j Kjd;ik epWtdk; vd;d tifahd bjhHpy;?</h5>			
+		<table width="100%" border="0">
+  <tr bgcolor="#68264D" style="color:#FFFFFF; font-size:15px;">
+    <td colspan="2">&nbsp;</td>
+    </tr>
+  <tr class="even">
+    <td width="65%">1 tptrhak; - fhy;eil tsu;g;g</td>
+    <td width="35%"><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+			
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>2 thdpiy / tptrhak; - gapu; cw;gj;jp</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+			
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>3 fk;gsp nghu;it - njhy; cw;gj;jp</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+			
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>4 ijay</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+			
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>5 fil/ ghd; fil</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+			
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>6 tu;j;jfk;, filfis jtpu;j;J</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+			
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>7 O fil, Xl;ly;, cztfk;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>8 Fg;ig nrfupg;g[</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+			
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>9 tpgj;J fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+			
+	      </p>
+	  </form></td>
+    </tr>
+	<tr class="odd">
+    <td>10 ifj;bjhHpy;fs; (rpw;gk;/ jsthl';fs; bra;jy;)</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		   <label><input type="radio" name="caste" value="radio"> Mk;</label>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label>
+			
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>kw;wit (Fwpg;gplt[k;)</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label><br>
+			
+	      </p>
+	  </form></td>
+    </tr>
+</table>
+	  
+	  <h5>E.5 ne;j Kjd;ik epWtdk; vg;bghJ nUe;J bray;gLfpwJ?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk; (jd; thH;ehs; KGtJk;)</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><label>khjA;fs; Fwpg;gplt[k; : <input name="" type="text" style="width:50px;"></label><label> tUlk :  <input name="" type="text" style="width:50px;"></label><br>			
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>E.6 fle;j xU tUlj;jpy;, Cjpak; bgw;Bwh my;yJ ny;yhkByh vj;jid egu;fs; ( ePA;fs;, FLk;g cWg;gpdu;, kw;wtu;fs; ) Btiy bra;Js;shu;fs;?</h5>
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label>KG Beuk; : <input name="" type="text" style="width:50px;"></label><label> gFjp Beuk; :  <input name="" type="text" style="width:50px;"></label>
+	      </p>
+	  </form>
+	  
+	  <h5>E.7 Kjd;ik epWtdj;jpd; Kk;Kukhd gUtj;jpy;, tHf;fkhd thuj;jpd; vj;jid FLk;g cWg;gpdu;fs; KG BeuBkh my;yJ gFjp BeukhfBth Btiy bra;thu;fs;?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label>KG Beuk; : <input name="" type="text" style="width:50px;"></label><label> gFjp Beuk; :  <input name="" type="text" style="width:50px;"></label>
+	      </p>
+	  </form>
+		
+		<h5>E.8 Kjd;ik epWtdj;jpd; Kk;Kukhd gUtj;jpy;, tHf;fkhd thuj;jpd; vj;jid btsp egu;fs KG BeuBkh my;yJ gFjp BeukhfBth Btiy bra;thu;fs;?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label>KG Beuk; : <input name="" type="text" style="width:50px;"></label><label> gFjp Beuk; :  <input name="" type="text" style="width:50px;"></label>
+	      </p>
+	  </form>
+	  
+	  <h5>E.9 Kjd;ik epWtdj;jpd; Kk;Kukhd gUtj;jpy;, tHf;fkhd thuj;jpd; vj;jid FLk;g cWg;gpdu;fs; KG BeuBkh my;yJ gFjp BeukhfBth Btiy bra;thu;fs;?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label>KG Beuk; : <input name="" type="text" style="width:50px;"></label><label> gFjp Beuk; :  <input name="" type="text" style="width:50px;"></label>
+	      </p>
+	  </form>
+	  
+	  <h5>E.10 Kjd;ik epWtdj;jpd; Kk;Kukhd gUtj;jpy;, tHf;fkhd thuj;jpd; vj;jid btsp egu;fs; KG BeuBkh my;yJ gFjp BeukhfBth Btiy bra;thu;fs;?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label>KG Beuk; : <input name="" type="text" style="width:50px;"></label><label> gFjp Beuk; :  <input name="" type="text" style="width:50px;"></label>
+	      </p>
+	  </form>
+	  
+	  <h5>E.11 Kjd;ik epWtdj;jpd; Kk;Kukhd gUtk; vt;tst[ fhyj;jpw;F nUf;Fk;? (khj';fspy;)</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label>khjA;fis Fwpg;gplt[k; <input name="" type="text"></label>
+	      </p>
+	  </form>
+	  
+	  <h5>E.12 epWtdj;jpd; tUtha; :- fle;j 12 khjj;jpy; Kjd;ik epWtdj;jhy; fPBH bfhLf;fgl;Ls;s bryt[fSf;F _yk; fpilj;j kjpg;ig Twt[k;. <br><br> kjpg;ig Fwpf;ft[k; :- gjpyspg;gtu; tUtha; ny;iy vd;why; <span style="font-family:Arial, Helvetica, sans-serif">'O'</span> vd Fwpf;ft[k;</h5>		
+		<table width="100%" border="0">
+  <tr bgcolor="#68264D" style="color:#FFFFFF; font-size:15px;">
+  
+    <td>bryt[ cUg;go</td>
+	<td>bryt[fs;</td>
+    </tr>
+  <tr class="even">
+    <td width="65%">1 bjhHpyhspfspd; rk;gsk;</td>
+    <td width="35%"><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>2 _yg; bghUl;fs;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>3 cuA;fs</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>4 g{r;rp kUe;Jfs;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>5 tpijfs</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>6 fhy;eil jPtzk;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>7 fhy;eil kUj;Jt Britfs;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>8 tpthraj;jpw;fhd kw;w bghUl;fs; (m) Britfs;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="even">
+    <td>9 kWtpw;gidf;fhd ruj;Jf;fs;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>10 nae;jpuk;/ fUtpfs; kw;Wk; kw;w bghUl;fs;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="even">
+    <td>11 cgfuz';fs;/ fl;ol thlif</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>12 guhkupg;g[ kw;Wk; gGJghu;j;jy</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="even">
+    <td>13 nghf;Ftuj;J</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>14 vupbghUs;/ vz;bza;/ kpd;rhuk;/ vuptha[.</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="even">
+    <td>15 tupfs;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>16 fldpd; tl;o kw;Wk; jtizj;bjhif</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="even">
+    <td>17 kw;wit ( Fwpg;gplt[k; )</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+  </tr>
+</table>
+		
+	  
+	  <h5>E.13 epWtdj;jpd; tUtha; :- fle;j 12 khjj;jpy; Kjd;ik epWtdj;jhy; fPBH bfhLf;fgl;Ls;s tUtha;fspd; _yk; fpilj;j kjpg;ig Twt[k;. <br><br> kjpg;ig Fwpf;ft[k; :- gjpyspg;gtu; tUtha; ny;iy vd;why; <span style="font-family:Arial, Helvetica, sans-serif">'O'</span> vd Fwpf;ft[k;</h5>
+		<table width="100%" border="0">
+  <tr bgcolor="#68264D" style="color:#FFFFFF; font-size:15px;">
+  
+    <td>tUtha; cUg;go</td>
+	<td>tUtha;</td>
+    </tr>
+  <tr class="even">
+    <td width="65%">1 bghUl;fs; my;yJ nritfs; _yk; fpillj;j gzk;</td>
+    <td width="35%"><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>2 mWtil bra;ag;gl;l bghUl;fSf;fspypUe;J bgw;w gzk;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>3 bghUl;fs; my;yJ nritfs; _yk; fpilj;j bghUs;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>4 tzpf brhj;ij tpw;gid bra;jjd; _yk;</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="even">
+    <td>5 tzpf brhj;ij thliff;F bfhLj;J</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+  <tr class="odd">
+    <td>6 kw;wit ( Fwpg;gplt[k;) <label><input name="" type="text"></label></td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input name="" type="text"></label>
+	      </p>
+	  </form></td>
+    </tr>
+</table>
+		<div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_E"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_E"><p>Next</p></a>
+		</div><br><br><br><br>
+  		</div>
+	<!-- End of Section E -->
+
+	<!-- Start of Section F -->
+		<div class="tam_content" id="secF">	
+		<h2>gFjp : <span>F.</span> FLk;g mstpy; Rfhjhuk</h2>	
+		<h4>fHptiwapd;; chpik</h4>
+		
+		<h5>F.1 cA';fs; tPl;oy; fHptiw cs;sjh? (gad;gLj;JfpwPh;fsh vd;gjpy; BtWgl;lJ?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">F 22</span> Bfs;tpf;F bry;f</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.2 fHptiwapy; cs;s tPLfspy; jw;nghJ ne;j fHptiw gad;ghl;oy; cs;sjh?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">F 3</span> Bfs;tpf;F bry;f</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+	      </p>
+	  </form>
+	  
+	  
+	  <h5>F.2.1 fHptiwapy; cs;s tPLfspy; Vd; mJ gad;ghl;oy; ny;iy?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> fl;Lkhdk; Koatpy;iy</label><br>
+			<label><input type="radio" name="caste" value="radio"> cilj;Js;sJ </label><br>
+			<label><input type="radio" name="caste" value="radio"> FHp epuk;gpa[s;sJ </label><br>
+			<label><input type="radio" name="caste" value="radio"> FLk;g cWg;gpdh;fs; BtW nlk; bry;y tpUk;g[fpd;wdh; </label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;) </label><label class="left_align"><input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+		
+		<h2>Beu;fhzy; bra;gtu; : eh';fs; nd;Dk; cA;fs; fHptiwia gw;wp rpy Bfs;tpfis Bfl;f epidf;fpBwhk;. vd;d tif / vg;bghGJ fl;lg;gl;lJ Bghd;wit.</h2>
+		
+		<h5>F.3 cA;fs; fHptiw vA;F mike;Js;sJ?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> tPl;oDs; jdp miw</label><br>
+			<label><input type="radio" name="caste" value="radio"> tPl;il xl;oago fl;lg;gl;lJ</label><br>
+			<label><input type="radio" name="caste" value="radio"> tPl;il xl;oago fl;lg;gl;lJ (jl;oahy;) </label><br>
+			<label><input type="radio" name="caste" value="radio"> tPl;L mUfpy; (20kP-f;Fs;) ed;whf fl;lg;gl;lJ miw. </label><br>
+			<label><input type="radio" name="caste" value="radio"> tPl;L mUfpy; (20kP-f;Fs;) Rkhuhf (jl;oahy;) fl;lg;gl;lJ miw </label><br>
+			
+			<label><input type="radio" name="caste" value="radio"> tPl;oy; nUe;J 20kP js;sp ed;whf fl;lg;gl;l miw </label><br>
+			<label><input type="radio" name="caste" value="radio"> tPl;oy; nUe;J 20kP js;sp Rkhuhf fl;lg;gl;l miw </label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;) </label><label class="left_align"><input name="" type="text"></label><br>
+			
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.4 vd;d tifahd fHptiw nJ?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> neuo FHp fHptiw</label><br>
+			<label><input type="radio" name="caste" value="radio"> xU FHpa[ld; nizf;fg;gl;l fHptiw</label><br>
+			<label><input type="radio" name="caste" value="radio"> xU FHpa[ld; nizf;fg;gl;l fHptiw kw;Wk; rpWePh; bry;y jdpahf </label><br>
+			<label><input type="radio" name="caste" value="radio"> nU FHpa[ld; nizf;fg;gl;l fHptiw </label><br>
+			<label><input type="radio" name="caste" value="radio"> nU FHpa[ld; nizf;fg;gl;l fHptiw kw;Wk; rpWePh; bry;y jdpahf </label><br>
+			
+			<label><input type="radio" name="caste" value="radio"> brg;of; bjhl;o </label><br>
+			<label><input type="radio" name="caste" value="radio"> Vhptha[ fyDld; nizf;fg;gl;l fHptiw </label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;) </label><label class="left_align"><input name="" type="text"></label><br>
+			
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.5 cA;fSila FHp nJtiu epuk;gpa[s;sjh?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk; xU Kiw</label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk;/ xU Kiwf;F Bky;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">F 7</span> Bfs;tpf;F bry;f</label><br>			
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">F 7</span> Bfs;tpf;F bry;f</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.6 FHp epuk;g vt;tst[ ehl;fs; MdJ?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> xU tUlk; (m) mjw;F fPH;</label><br>
+			<label><input type="radio" name="caste" value="radio"> 2-3 Mz;Lfs</label><br>
+			<label><input type="radio" name="caste" value="radio"> 4-5 Mz;Lfs </label><br>
+			<label><input type="radio" name="caste" value="radio"> 5 Mz;LfSf;F Bky;</label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.7 jw;bghGJ gad;ghl;oy; cs;s FHp epuk;g vt;tst[ fhyk; MFk; vd;W ePA;fs; epidf;fpwPh;fs;. (ePA;fs; gad;gLj;j Muk;gpj;j Beuj;jpy; nUe;J kjpg;gplt[k;).</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> xU tUlk; (m) mjw;F fPH;</label><br>
+			<label><input type="radio" name="caste" value="radio"> 2-3 Mz;Lfs</label><br>
+			<label><input type="radio" name="caste" value="radio"> 4-5 Mz;Lfs </label><br>
+			<label><input type="radio" name="caste" value="radio"> 5 Mz;LfSf;F Bky;</label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+		
+		<h5>F.8 FHp epuk;gp tpl;lhy;, mg;bghGJ vd;d bra;tPh;fs;?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> nuz;lhtJ FHpia gad;gLj;JBthk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> nuz;lhtJ FHp vLf;f jpl;lkpLBthk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> mij eh';fns fhyp bra;J tpLBthk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> ahiuahtJ itj;J fhyp bra;J tpLBthk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> BtW egh;fSila fHptiwia gad;gLj;JBthk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> jpwe;jbtsp </label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;)</label><label class="left_align"><input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.9 Kd;g[ Bfl;fg;gl;l Bfs;tpf;F (fHptiw tif) gjpy; 1 (m) 2 vd;why; rpWJis FHha; <span style="font-family:Arial, Helvetica, sans-serif;">(Vent – Pipes)</span> cs;sjh?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;)</label><label class="left_align"><input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.10 Kd;g[ Bfl;fg;gl;l Bfs;tpf;F (fHptiw tif) gjpy; 2 vd;why; vA;Bf kyk; Rj;jhkhfg;gLfpwJ? </h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> FHpf;Fs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> Bjhl;lj;jpw;F </label><br>
+			<label><input type="radio" name="caste" value="radio"> tay;btspf;F </label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;)</label><label class="left_align"><input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.11 vg;bghGJ fHptiw fl;lg;gl;lJ </h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> ehA';fs; ne;j tPl;ow;F tUk;bghGnj nUe;jJ</label><br>
+			<label><input type="radio" name="caste" value="radio"> Kd;W khjA';fSf;Fs; </label><br>
+			<label><input type="radio" name="caste" value="radio"> 3 Kjy; 6 khjA';fSf;Fs;shf</label><br>
+			<label><input type="radio" name="caste" value="radio"> 6 Kjy; 1 tUl'A;fSf;Fs;shf </label><br>
+			<label><input type="radio" name="caste" value="radio"> 6 Kjy; 1 tUl'A;fSf;Fs;shf </label><br>
+			<label><input type="radio" name="caste" value="radio"> 3 tUlA;fSf;F Bkyhf </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.12 fHptiw fl;o Kog;gjw;F vj;jid ehl;fs; MdJ? </h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> 1 thuj;jpw;Fk; Fiwthf</label><br>
+			<label><input type="radio" name="caste" value="radio"> Rkhh; xU khjk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> rpy khj';fs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> Rkhh; xU tUlk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> xU tUlj;jpw;Fk; Bky; </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.13 ePA;fs; fHptiw fl;Ltjw;F vt;tst[ gzk; bryt[ bra;jPh;fs;? </h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> FHp njhz;l</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bghUl;;fs; (gyif – cs; thpir)</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> Bghf;Ftuj;J</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bfhj;jdhh;</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;w Typ</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bryt[</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> VjhtJ gGJ</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ</label><label class="left_align">U. <input name="" type="text"></label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.14 njw;fhf vA;fpUe;J gzk; bgw;wPh;fs;? </h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> nrkpg;g[</label><br>
+			<label><input type="radio" name="caste" value="radio"> Kiwahd epjp epWtd';fsplk; fld; (tA;fp/ MfI) </label><br>
+			<label><input type="radio" name="caste" value="radio"> Kiwrhuh mikg;g[fsplk; nUe;J fld;</label><br>
+			<label><input type="radio" name="caste" value="radio"> khdpak; </label><br>
+			<label><input type="radio" name="caste" value="radio"> ez;gh;fs; kw;Wk; FLk;gj;jhhplk; nUe;J gz khw;wk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;)</label><label class="left_align"><input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.15 ePA;fs; fHptiwf;fhf VBjDk; epjp khdpak; bgw;Ws;sPh;fsh? </h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;, murhA;fj;jplk;</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk;, bjhz;L epWtdj;jplk;</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk;, kw;wth;fsplk;</label><label class="left_align">U. <input name="" type="text"></label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy</label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ</label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>F.16 eP';fs; fHptiw fl;Ltjw;F Typ ny;yhky; bgw;w Mjut[ VnjDk; bgw;wPh;fsh?</h5>			
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;, FLk;g cWg;gpdnu ntiyahl;fshf[</label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk;, FLk;g cWg;gpdh; ny;yhj ntiyahs; </label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk;, bghUl;fs;</label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk;, kw;wit </label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ</label><br>
+	      </p>
+	  </form>		
+	  <div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_F"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_F"><p>Next</p></a>
+		</div><br><br><br><br>
+		</div>
+		
+	<!-- End of Section F -->
+	
+	<!-- Start of Section G -->
+		<div class="tam_content" id="secG">	
+		<h2>gFjp : <span>G - </span> Fspay;</h2>		
+		
+		<h5>G.1 ePA;fs; bghJthf vA;F Fspg;gPh;fs;?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> tPl;ow;Fs; cs;s Fspay; miwapy; </label><br>
+			<label><input type="radio" name="caste" value="radio"> tPl;ow;Fs; cs;s milf;fg;gl;l Fspay; miwapy; </label><br>	
+			<label><input type="radio" name="caste" value="radio"> tPl;ow;Fs; cs;s miwapd; xU gFjpapy; (Fspay; miw vd Kot[ bra;ag;gl;ljh?</label><br>	
+			<label><input type="radio" name="caste" value="radio"> tPl;ow;F btspna cs;s Fspay; miwapy;</label><br>	
+			<label><input type="radio" name="caste" value="radio"> tPl;ow;F btspna milf;fg;gl;l Fspayiw</label><br>	
+			<label><input type="radio" name="caste" value="radio"> tPl;ow;F btspna jl;oahy; milf;fg;gl;l kiwtpy</label><br>	
+			<label><input type="radio" name="caste" value="radio"> tPl;ow;F btspna _lg;gl;lhy; (c.f.khoapy;)</label><br>	
+			<label><input type="radio" name="caste" value="radio"> tPl;ow;F btspna jpwe;jbtspapy;</label><br>	
+			<label><input type="radio" name="caste" value="radio"> MW/thp/fhy;tha;/gk;g[brl;L/fpzW</label><br>	
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gpLf)</label><label class="left_align"><input name="" type="text"></label><br>					
+	      </p>
+	  </form>
+	  
+	  <h5>G.2 kw;w egh;fBsh / FLk;g cWg;gpdh;fBs ne;j trjpia gad;gLj;JfpwPh;fsh?</h5>	  	
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label><input type="radio" name="caste" value="radio"> Mk;/ kw;w egh; / FLk;gj;jpdh; gad;gLj;Jfpwhh;fs;<br> vz;zpf;ifia Fwpg;gplt[k; </label><label class="left_align"><input name="" type="text" id="basicCalculator"></label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy/ kw;wth;fshy; gad;gLj;jtpy;iy. </label><br>
+		</p>
+	    </form>	
+		<div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_G"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_G"><p>Next</p></a>
+		</div><br><br><br><br>
+	</div>
+	<!-- End of Section G -->
+	
+	<!-- Start of Section I -->
+		<div class="tam_content" id="secI">	
+		<h2>gFjp : <span>I - </span> brhj;Jf;fs;</h2>		
+		<h4>gjpyspg;gthplk; Twt[k;: ehd; jw;bghGJ c';fs; FLk;gj;jhUf;F brhe;jkhd brhj;J tptu';fis gw;wp nfl;f ,Uf;fpnwd;</h4>
+		<h5>I.1 ePA;fs; FoapUf;Fk; tPl;il jtph;j;J, cA;fs; FLk;gj;jpdUf;F brhe;jkhd tPL cs;sjh?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">I.4</span> f;F bry;f</label><br>	
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">I.4</span> f;F bry;f</label><br>			
+	      </p>
+	  </form>
+	  
+	  <h5>I.2 nd;iwa epiyapy; tpw;gid bra;jhy;, ne;j tPl;ow;F vt;tst[ fpilf;Fk;?</h5>
+	  	<p style="font-family:Arial, Helvetica, sans-serif">IF RESPONDENT ANSWERS “DON’T KNOW”, PROMPT FOR BEST ESTIMATE OR ESTIMATE FOR VALUE OF SIMILAR DWELLING NEARBY</p>
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label>bjhifia vGjt[k; <input name="" type="text"></label><br>
+	      <br>
+		</p>
+	    </form>		
+		
+		<h5>I.3 ne;j tPl;il thliff;F bfhLj;Js;sPh;fs;?</h5>
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label><input type="radio" name="caste" value="radio"> Mk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>	
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+		</p>
+	    </form>
+		
+		<h5>I.4 cA;fs; FLk;gj;jpw;F brhe;jkhf vt;tst[ epyk; cs;sJ?</h5>
+		<p style="font-family:Arial, Helvetica, sans-serif;">ENTER ZERO (‘0’) IF HOUSEHOLD OWNS NO LAND. ENTER THE UNIT IN WHICH THE RESPONENT REOPRTS HIS LAND (DATA ETRY WILL STREAMLINE UNITS) IF ‘0' GO TO XXX [RENT AGRICULTURAL LAND]</p>
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label><input type="radio" name="caste" value="radio"> ghrd trjpa[s;s <input name="" type="text"> Vf;fh</label><br>
+			<label><input type="radio" name="caste" value="radio"> ghrd trjp ny;yhj <input name="" type="text"> Vf;fh</label><br>	
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+		</p>
+	    </form>
+		
+		<h5>I.5 ahUila bgahpy; ne;j epyk; cs;sJ?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label><input type="radio" name="caste" value="radio"> FLk;g cWg;gpdh; FwpaPL <input name="" type="text"> </label><br>
+			<label><input type="radio" name="caste" value="radio"> FLk;g cWg;gpdh; ny;yhj ntW xUth; Fwpg;gplt[k; <input name="" type="text"> </label><br>	
+		</p>
+	    </form>
+		
+		<h5>I.6 ghrdk; vd;why;, vd;d jz;zPh; gad;gLj;JfpwPh;fs;?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label><input type="radio" name="caste" value="radio"> epyj;jo ePh; (MH;Jis fpzW/ fpzW Kyk; cwp";rp) </label><br>
+		   <label><input type="radio" name="caste" value="radio"> nkw;gug;g[ ePh; - MW/ Vhp Vidad </label><br>
+		   
+		   <label><input type="radio" name="caste" value="radio"> kiHePh; </label><br>
+		   <label><input type="radio" name="caste" value="radio"> Rj;jpfhpf;fg;gl;l fHpt[ ePh; </label><br>
+		   <label><input type="radio" name="caste" value="radio"> Rj;jpfhpf;fg;glhj fHpt[ ePh; </label><br>
+		   <label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;)</label> <input name="" type="text"><br>
+		   <label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+		</p>
+	    </form>
+		
+		<h5>I.7 cA;fSf;F brhe;jkhd vy;yh epyj;jpd; kjpg;g[ vd;d?</h5>	
+		<p style="font-family:Arial, Helvetica, sans-serif;">IF RESPONDENT ANSWERS “DON’T KNOW”, PROMPT FOR BEST ESTIMATE OR ESTIMATE FOR VALUE OF SIMILAR PIECE OF LAND NEARBY</p>	
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label>bjhifia vGjt[k;<input name="" type="text"></label><br>
+		   
+		</p>
+	    </form>
+		
+		<h5>I.8 vj;jid Vf;fh; epyk; thliff;F, Fj;jiff;F tpl;Ls;sPh;fs;? Vf;fhpy; Fwpg;gpLf.</h5>	
+		<p style="font-family:Arial, Helvetica, sans-serif;">ENTER ZERO (‘0’) IF HOUSEHOLD DOES NOT RENT OUT LAND AND GO TO F.3.</p>	
+		<form name="form1" method="post" action="">
+		  <p>		  
+		   <label>Vf;fhpy; Fwpg;gpLf <input name="" type="text"></label><br>
+		   
+		</p>
+	    </form>
+		
+		<h5>I.9 vj;jid Vf;fh; epyk; thlif, Fj;jiff;F bgw;Ws;sPh;fs;?</h5>	
+		<p style="font-family:Arial, Helvetica, sans-serif;">ENTER ZERO ('0') IF HOUSEHOLD OWNS NO LAND AND GO TO F.4.</p>	
+		<form name="form1" method="post" action="">
+		  <p>		  
+		   <label>Vf;fhpy; Fwpg;gpLf <input name="" type="text"></label><br>
+		   
+		</p>
+	    </form>
+		<div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_I"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_I"><p>Next</p></a>
+		</div><br><br><br><br>
+	</div>
+	<!-- End of Section I -->
+	
+	<!-- Start of Section J -->
+		<div class="tam_content" id="secJ">
+		<h2>gFjp : <span>J - </span> Brkpg;g[</h2>		
+		
+		<h5>J.1 cA;fs; FLk;gj;jpy; VnjDk; BBrkpg;g[ cs;sjh? (tA;fpapy;, Tl;Lwtpy;, tPl;oy;...... vidad)....</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>	
+					
+	      </p>
+	  </form>
+	  
+	  <h5>J.2 FLk;gj;jpd; Brkpg;g[ vA;F cs;sJ? <span style="font-family:Arial, Helvetica, sans-serif;">(MULTIPLE ANSWERS POSSIBLE)</span></h5>
+	  	<p style="font-family:Arial, Helvetica, sans-serif">IF RESPONDENT ANSWERS “DON’T KNOW”, PROMPT FOR BEST ESTIMATE OR ESTIMATE FOR VALUE OF SIMILAR DWELLING NEARBY</p>
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label>bjhifia vGjt[k; <input name="" type="text"></label><br>
+	      <br>
+		</p>
+	    </form>		
+		
+		<h5>J.3 ne;j Brkpg;gpd; bkhj;j bjhif vd;d?</h5>
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label>bjhif <input name="" type="text"></label><br>
+		</p>
+	    </form>
+		
+		<h5>J.4 rpy FLk;gA;fs; Fwpg;gpl;l fhuz';fs;, epfH;r;rpfSf;fhf Brkpg;ghh;fs;. mJ Bghy ePA;fs; VBjDk; fhuz';fSf;fhf Brkpf;fpwPh;fsh?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">K</span>.1 Bfs;tpf;F bry;yt[k;<br>	
+					
+	      </p>
+	    </form>
+		
+		<h5>J.5 vd;d fhuzA;fSf;fhf?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		   <label>1. <input name="" type="text" style="width:500px;"> </label><br>
+			<label>2. <input name="" type="text" style="width:500px;"> </label><br>	
+		</p>
+	    </form>
+		<div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_J"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_J"><p>Next</p></a>
+		</div><br><br><br><br>
+	</div>
+	<!-- End of Section J -->
+	
+	<!-- Start of Section M -->
+		<div class="tam_content" id="secM">	
+		<h2>gFjp : <span>M - </span> fhg;gPL</h2>		
+		
+		<h5>M.1 cA;fs; FLk;gj;jpy; vtBuDk; fhg;gPL bra;Js;sPh;fsh?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk; </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">M.3</span> f;F bry;f</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>			
+	      </p>
+	  </form>
+	  
+	  <h5>M.2 Vd; cA;fs; FLk;gj;jpy ; ahUf ;Fk ; fhg;gPL ny;iy?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> mtrpakpy;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> mjpf bryt[ </label><br>
+			
+			<label><input type="radio" name="caste" value="radio"> ey;y fhg;gPL gw;wpa mwpahik </label><br>
+			<label><input type="radio" name="caste" value="radio"> rupahf fhg;gPLj; bjhifia bfhLg;gjpy;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> fhg;gPl;il gw;wpa mwpahik </label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit Fwpg;gpLf </label><label class="left_align"> <input name="" type="text"></label><br>
+	      <label><input type="radio" name="caste" value="radio"> bjhpahJ </label><label class="left_align"> mLj;j gFjpf;F bry;f</label><br>
+		</p>
+	    </form>
+	  	
+		
+		<table width="100%" border="0">
+  <tr bgcolor="#68264D" style="color:#FFFFFF; font-size:15px;">
+    <td width="15%">&nbsp;</td>
+    <td width="28%" valign="top">fPBH bfhLf;fg;gl;Ls;s fhg;gPL jpl;lj;jpy; cA;fs; FLk;g cWg;gpdh;fs; fhg;gPL bra;Js;shh;fsh?</td>
+    <td width="28%" valign="top">cA;fs; FLk;gk; ve;j epWtdj;jpDila fhg;gPl;il bgw;Ws;sJ? epWtdj;jpd; bgaiu vGJf</td>
+    <td width="29%" valign="top">ePA;fs; vg;bghGjhtJ fhg;gPL epWtdj;jplk; nUe;J gzk; bgw;Ws;sPfsh?</td>
+  </tr>
+  <tr class="even">
+    <td>1 gaph; fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form2" method="post" action="">
+      <label>
+        <input type="text" name="textfield">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>2 thdpiy / kiHfhy fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form3" method="post" action="">
+      <label>
+        <input type="text" name="textfield2">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="even">
+    <td>3 Ma[s; fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form4" method="post" action="">
+      <label>
+        <input type="text" name="textfield3">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>4 kUj;Jt fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form5" method="post" action="">
+      <label>
+        <input type="text" name="textfield4">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="even">
+    <td>5 jP fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form6" method="post" action="">
+      <label>
+        <input type="text" name="textfield5">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>6 thfd fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form7" method="post" action="">
+      <label>
+        <input type="text" name="textfield6">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="even">
+    <td>7 fhy;eil fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form8" method="post" action="">
+      <label>
+        <input type="text" name="textfield7">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>8 KjpBahh; fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form9" method="post" action="">
+      <label>
+        <input type="text" name="textfield8">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="even">
+    <td>9 tpgj;J fhg;gPL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form10" method="post" action="">
+      <label>
+        <input type="text" name="textfield9">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+  <tr class="odd">
+    <td>kw;wit Fwpg;gpL</td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+    <td><form name="form11" method="post" action="">
+      <label>
+        <input type="text" name="textfield10">
+        </label>
+    </form>
+    </td>
+    <td><form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> M</label>
+			<label><input type="radio" name="caste" value="radio"> n</label>
+			<label><input type="radio" name="caste" value="radio"> bj</label>
+	      </p>
+	  </form></td>
+  </tr>
+</table>
+
+		
+		
+	  	<h5>M.6 FHha; mUfpy; ghjhs rhf;fil (m) jpwe;jbtsp rhf;fil ghh;f;f Kofpwjh? </h5>
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><label class="left_align">gFjp <span style="font-family:Arial, Helvetica, sans-serif;">N </span>f;F bry;f</label><br>			
+	      </p>
+	  </form>
+	  
+	  <h5>M.7 FHha; mUfpy; ghjhs rhf;fil (m) jpwe;jbtsp rhf;fil ghh;f;f Kofpwjh? </h5>
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><label class="left_align">gFjp <span style="font-family:Arial, Helvetica, sans-serif;">N </span>f;F bry;f</label><br>			
+	      </p>
+	  </form>
+	  
+	  <h5>M.8 FHha; mUfpy; ghjhs rhf;fil (m) jpwe;jbtsp rhf;fil ghh;f;f Kofpwjh? </h5>
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>			
+	      </p>
+	  </form>
+	  <div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_M"><p>Previous</p></a>
+			<a href="#" class="nex" id="gotonext_M"><p>Next</p></a>
+		</div><br><br><br><br>
+	</div>
+	<!-- End of Section M -->
+	
+	<!-- Start of Section N -->
+		<div class="tam_content" id="secN">	
+		<h2>gFjp : <span>N.</span> FLk;g mstpy; Rfhjhuk</h2>	
+		<h4>gjpyhspapd; Rfhjhu trjpfs; vg;go nUf;fpwJ vd;W ghh;f;ft[k;. mth;fsplk; cs;sJ vd;why; fpBH bfhLf;fg;gl;Ls;s Bfs;tpfSf;F gjpy; vGjt[k; BkYk; Koe;jhy; jz;zPh; kw;Wk; fHpt[fis mfw;Wtij ghh;f;ft[k;.</h4>
+		
+		<h5> fHptiw</h5>	
+		<h5>N.1 ne;j tPl;oy; fHptiw cs;sjh?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;. tPl;ow;Fs; cs;sJ </label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk;. tPl;ow;F btspBa cs;sJ </label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy. fHptiw fpilahJ </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">N 6</span> Bfs;tpf;F bry;f</label><br>
+			<label><input type="radio" name="caste" value="radio"> fHptiwghh;f;ftpy;iy </label><br>
+	      </p>
+	  </form>
+	  
+	  
+	 
+		<h5>N.2 vd;d tifahd fHptiw nJ?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> neuo FHp fHptiw </label><br>
+			<label><input type="radio" name="caste" value="radio"> xU FHpa[ld; nizf;fg;gl;l fHptiw </label><br>
+			<label><input type="radio" name="caste" value="radio"> xU FHpa[ld; nizf;fg;gl;l fHptiw kw;Wk; rpWePh; bry;y jdpahf </label><br>
+			<label><input type="radio" name="caste" value="radio"> xU FHpa[ld; nizf;fg;gl;l fHptiw </label><br>
+			<label><input type="radio" name="caste" value="radio"> xU FHpa[ld; nizf;fg;gl;l fHptiw kw;Wk; rpWePh; bry;y jdpahf </label><br>
+			<label><input type="radio" name="caste" value="radio"> brg;of; bjhl;o </label><br>
+			<label><input type="radio" name="caste" value="radio"> Vhptha[ fyDld; nizf;fg;gl;l fHptiw </label><br>
+			<label><input type="radio" name="caste" value="radio"> kw;wit (Fwpg;gplt[k;) </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ. </label><br>
+	      </p>
+	  </form>
+	  
+	  
+	  
+		<h5>N.3 vd;d tifahd fHptiw nJ?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> neuo FHp fHptiw </label><br>
+			<label><input type="radio" name="caste" value="radio"> xU FHpa[ld; nizf;fg;gl;l fHptiw </label><br>
+			<label><input type="radio" name="caste" value="radio"> xU FHpa[ld; nizf;fg;gl;l fHptiw kw;Wk; rpWePh; bry;y jdpahf </label><br>			
+	      </p>
+	  </form>
+	  
+	 
+		<h5>N.4 fHptiw kw;Wk; mij Rw;wpa[s;s gFjpfs; mGf;fhf, g{r;rpfs; epiwe;J kw;Wk; (m) bfl;l thil mof;fpwjh?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> mGf;fhf, g{r;rpfs; epiwe;J kw;Wk; (m) bfl;l thil mof;fpwJ </label><br>
+			<label><input type="radio" name="caste" value="radio"> Rj;jkhf ny;iy, rpy g{r;rpfs; kw;wk; bfl;l thil </label><br>
+			<label><input type="radio" name="caste" value="radio"> xust[ Rj;jkhf </label><br>
+			<label><input type="radio" name="caste" value="radio"> Rj;jhkhf cs;sJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>N.5 fHptiw mUfpy; iffis Rj;jk; bra;a trjp cs;sjh ?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> nUf;F, Mdhy; jz;zPh; / Brhg;g[ ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> nUf;F Mdhy; jz;zPh; kl;Lk; </label><br>
+			<label><input type="radio" name="caste" value="radio"> nUf;F jz;zPh; kw;Wk; Brhg;g[ </label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>N.6 jz;zPh; Brkpj;J itj;Js;s ghj;jpuA;fs; vt;thW cs;sJ ?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> mjpf mGf;fhf </label><br>
+			<label><input type="radio" name="caste" value="radio"> mGf;fhf </label><br>
+			<label><input type="radio" name="caste" value="radio"> rpwpjst[ Rj;jhkhf </label><br>
+			<label><input type="radio" name="caste" value="radio"> Rj;jhkhf </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>N.7 FoePh; Fog;gjw;F Brkpj;J itj;Js;s ghj;jpuA;fs; vt;thW cs;sJ?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> mjpf mGf;fhf </label><br>
+			<label><input type="radio" name="caste" value="radio"> mGf;fhf </label><br>
+			<label><input type="radio" name="caste" value="radio"> rpwpjst[ Rj;jhkhf </label><br>
+			<label><input type="radio" name="caste" value="radio"> Rj;jhkhf </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>N.8 tPl;oy; fhy;eilfs; nUe;jhy; mit vA;F jA;FfpwJ?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> kf;fs; trpf;Fk; miwfspBy fhy;eilfs; jA;FfpwJ </label><br>
+			<label><input type="radio" name="caste" value="radio"> rpy fhy;eilfs; kf;fs; trpf;Fk; miwfspBy my;yJ tPl;Lf;F Kd;g[wk; jA;Ffpd;wJ </label><br>
+			<label><input type="radio" name="caste" value="radio"> rpy BeuA;fspy; fhy;eilfs; miwfSf;Fs; te;J bry;Yk; mitfs; brd;wgpd; miwfs; Rj;jk; bra;ag;gLfpwJ </label><br>
+			<label><input type="radio" name="caste" value="radio"> fhy;eilfs; kf;fs; jA;Fk; miwfSf;Fs; vg;bghGJk; tUtjpy;iy, tPl;oByh my;yJ mUfpByh fhy;eilfs; ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> fz;lwpatpy;iy </label><br>
+	      </p>
+	  </form>
+		
+		<h2>jz;zPu; Mjhuk;</h2>	
+		<h5>N.9 tPl;oizg;gpy; FHha; cs;sjh?</h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;. tPl;ow;Fs; cs;sJ </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">N 10</span> Bfs;tpf;F bry;f</label><br>
+			<label><input type="radio" name="caste" value="radio"> Mk;. tPl;ow;F btspBa cs;sJ </label><label class="left_align"><span style="font-family:Arial, Helvetica, sans-serif;">N 10</span> Bfs;tpf;F bry;f</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy. FHha; ny;iy </label><label class="left_align"> Koj;Jf;bfhs;st[k;</label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><label class="left_align"> Koj;Jf;bfhs;st[k;</label><br>
+	      </p>
+	  </form>
+	  
+	  
+	  <img src="images/n_10.jpg">
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	   <img src="images/n_11.jpg">		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <img src="images/n_12.jpg">
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <img src="images/n_13.jpg">	
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <img src="images/n_14.jpg">	
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+
+	  <img src="images/n_15.jpg">
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  
+	  <h5>N.16 FHha; mUfpy; ghjhs rhf;fil (m) jpwe;jbtsp rhf;fil ghh;f;f Kofpwjh? </h5>		
+		<form name="form1" method="post" action="">
+		  <p>		    
+		    <label><input type="radio" name="caste" value="radio"> Mk;</label><br>
+			<label><input type="radio" name="caste" value="radio"> ny;iy </label><br>
+			<label><input type="radio" name="caste" value="radio"> bjhpahJ </label><br>
+	      </p>
+	  </form>
+	  <div class="nav_btn">
+	  		<a href="#" class="prev" id="gotoprev_N"><p>Previous</p></a>
+		</div><br><br><br><br>
+	</div>
+	<!-- End of Section N -->
+</div>
+</body>
+</html>
