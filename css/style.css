@@ -1,0 +1,72 @@
+/* CSS Document */
+@font-face {
+	font-family: 'Conv_Ismail';
+	src: url('../fonts/Ismail.eot');
+	src: url('../fonts/Ismail.woff') format('woff'), url('../fonts/Ismail.ttf') format('truetype'), url('../fonts/Ismail.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'aliquamultralight';
+    src: url('../fonts/aliquam-webfont.eot');
+    src: url('../fonts/aliquam-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aliquam-webfont.woff') format('woff'),
+         url('../fonts/aliquam-webfont.ttf') format('truetype'),
+         url('../fonts/aliquam-webfont.svg#aliquamultralight') format('svg');
+  
+
+}
+
+body{margin: 0; padding:0px;}
+.container{width:600px; margin:0 auto;}
+
+.eng_content{margin:20px 20px; font-family:Arial, Helvetica, sans-serif; color:#333333; clear:both;}
+.eng_content h2{font-size:18px; text-align:center;}
+.eng_content h4{font-size:15px; background:#ccc; padding:7px;}
+.eng_content p{font-size:12px; line-height:23px;}
+.eng_content ol{margin:0px 0px 0px 20px; padding:0px;}
+.eng_content ol li{font-size:13px; line-height:24px;}
+
+.tam_content{margin:0px 20px; font-family: 'Conv_Ismail'; color:#333333; clear:both;}
+.tam_content h2{font-size:18px; background:#68264D; padding:7px; color:#fff; margin:0px;}
+.tam_content h2 span{font-family:Arial, Helvetica, sans-serif;}
+.tam_content h4{font-size:15px; padding:7px; margin:0px; padding:8px 0px 0px 0px; font-family: 'Conv_Ismail';}
+.tam_content h5{font-size:14px; padding:7px; margin:0px; margin:8px 0px 0px 0px; background:#D7D2C9; padding:7px; font-family: 'Conv_Ismail';}
+.firstletter{font-family:Arial, Helvetica, sans-serif;}
+.tam_content p{font-size:14px; line-height:23px;}
+.tam_content ol{margin:0px 0px 0px 20px; padding:0px;}
+.tam_content ol li{font-size:13px; line-height:24px;}
+
+.headline{height:400px; text-align:center; font-family:aliquamultralight; padding:30px 20px 0px 0px; color:#fff; letter-spacing: 2px;}
+.headline h1{font-size:28px; text-align:center;}
+.headline h2{font-size:20px; text-align:right; padding:19px 0px 0px 0px; line-height:25px;}
+.headline h2 span{font-size:15px; text-align:right;}
+
+input[type='radio']{   
+    vertical-align:top;	
+    padding: 20px 0px 10px 0px;
+    margin: 5px 0px 10px 0px;
+ }
+.left_align{padding:0px 0px 0px 28px;}
+label{background:#none; margin:0px; padding:0px;}
+table td{padding:5px; font-size:14px;}
+.even{background:#D7D2C9;}
+.odd{background:#EAE5DC;}
+
+.enter_btn{float:right;}
+.enter_btn p{background:#68264D; padding:10px 20px;}
+.enter_btn a{color:#FFFFFF; text-decoration:none;}
+
+.nav_btn{clear:both;}
+.nav_btn .prev{float:left;}
+.nav_btn .nex{float:right; width:100px; text-align:center;}
+
+.nav_btn p{background:#68264D; padding:10px 20px; font-family:Arial, Helvetica, sans-serif;}
+.nav_btn a{color:#FFFFFF; text-decoration:none;}
+
+input.text:focus, textarea:focus, select:focus { 
+    outline: none; 
+}
+
+.repeatQuestions{float:right; margin:10px 0px 0px 0px;}

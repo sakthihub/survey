@@ -1,0 +1,101 @@
+/* 
+    Document   : custom
+    Created on : 26 Oct, 2012, 12:11:04 PM
+    Author     : kavithan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.reset {
+    background: url("../images/btn-reset.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    height: 45px !important;
+    margin-left: 10px;
+    outline: 0 none;
+    width: 80px;
+    padding-right: 75px;
+}
+#contact-form{
+    margin: 0px !important;
+}
+body {
+    font-family: 'Gotham-Book';
+}
+
+.login
+{
+	margin:auto;
+	padding:30px;
+	width:300px;
+	
+}
+.green{color:green}
+.red{color:red}
+.login_lables
+{
+	width:100px;
+	margin: 10px 0 10px;
+	float:left;
+}
+.login_fileds
+{
+	width:190px;
+	margin: 10px 0 10px;
+	float:left;
+}
+
+.login_fileds_fg
+{
+	width:400px;
+	margin: 10px 0 10px;
+	float:left;
+	
+}
+.error
+{
+	color:#F00;
+	margin:auto;
+	width:200px;
+}
+.fg_pass
+{
+	margin:auto;
+	padding:20px;
+	width:522px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	border:#000 solid 1px;
+	height:150px;
+}
+.f_err
+{
+	margin:auto;
+	width:550px;
+	padding:20px;
+}
+.lgout
+{
+	float:right;
+	padding-right:20px;
+}
+#actForm
+{
+	float:none;
+}
+.login_fileds a
+{
+	color:#58ABCB;
+}
+.lgin
+{
+	 text-align: center;
+}
+.fg_pass {
+    border: 1px solid #000000;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 12px;
+    height: 150px;
+    margin: auto;
+    padding: 20px;
+    width: 522px;
+}
